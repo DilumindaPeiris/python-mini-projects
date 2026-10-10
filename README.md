@@ -15,6 +15,13 @@ A collection of small command-line applications using Python's standard library 
 4. **To-Do List CLI** (`todo_cli.py`)
    - Simple task manager utilizing JSON for storage.
    - Add, list, complete, and delete tasks quickly from the terminal.
+5. **Text Analyzer** (`text_analyzer.py`)
+   - Analyzes a text file to count lines, words, and characters.
+   - Displays the top most common words.
+6. **System Information** (`system_info.py`)
+   - Displays basic OS and hardware information using the `platform` module.
+7. **Base64 Encoder/Decoder** (`base64_encoder.py`)
+   - Quickly encode or decode text strings to and from Base64.
 
 ## Run
 Requires Python 3.10+.
@@ -36,6 +43,16 @@ python password_generator.py --no-symbols
 python todo_cli.py add "Finish GitHub setup"
 python todo_cli.py list
 python todo_cli.py done 1
+
+# Text Analyzer
+python text_analyzer.py README.md --top 3
+
+# System Information
+python system_info.py
+
+# Base64 Encoder
+python base64_encoder.py -e "Hello World"
+python base64_encoder.py -d "SGVsbG8gV29ybGQ="
 ```
 
 Note: Local databases (`*.db`), generated exports (`*.csv`), and JSON data files (`*.json`) should be excluded from version control.
